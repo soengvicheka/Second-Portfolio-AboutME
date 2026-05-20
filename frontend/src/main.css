@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .btn-primary {
+        @apply px-6 py-2 bg-dark-green text-white rounded-full font-medium hover:bg-light-green transition;
+    }
+
+    .btn-secondary {
+        @apply px-6 py-2 bg-transparent border-2 border-dark-green text-dark-green rounded-full font-medium hover:bg-dark-green hover:text-white transition;
+    }
+
+    .badge {
+        @apply inline-block px-3 py-1 bg-gold text-dark-green text-sm font-medium rounded-full;
+    }
+
+    .section-title {
+        @apply text-3xl md:text-4xl font-bold text-dark-green;
+    }
+}
