@@ -22,7 +22,7 @@
       <!-- Right - Content -->
       <div>
         <h2 class="text-4xl font-bold mb-6">
-          Who is <span class="text-gold">Olivia Smith</span>?
+          Who is <span class="text-gold">SOENG Vicheka</span>?
         </h2>
         <p class="text-gray-200 mb-8 text-lg leading-relaxed">
           I'm a passionate product designer with over 5 years of experience creating intuitive and beautiful digital experiences. My expertise spans UI/UX design, web design, and mobile application design.
@@ -30,15 +30,15 @@
 
         <div class="grid grid-cols-3 gap-6 mb-8">
           <div>
-            <div class="text-3xl font-bold text-gold">400+</div>
+            <div class="text-3xl font-bold text-gold">6+</div>
             <p class="text-gray-300">Projects</p>
           </div>
           <div>
-            <div class="text-3xl font-bold text-gold">50+</div>
+            <div class="text-3xl font-bold text-gold">None</div>
             <p class="text-gray-300">Clients</p>
           </div>
           <div>
-            <div class="text-3xl font-bold text-gold">1B</div>
+            <div class="text-3xl font-bold text-gold">None</div>
             <p class="text-gray-300">Users</p>
           </div>
         </div>

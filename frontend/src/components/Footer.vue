@@ -4,7 +4,7 @@
       <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div>
           <div class="text-2xl font-bold mb-4">
-            <span class="text-gold">O</span>livia
+            <span class="text-gold">SOENG </span>Vicheka
           </div>
           <p class="text-gray-300 text-sm">Creating beautiful digital experiences</p>
         </div>
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="border-t border-gray-600 pt-8 text-center text-gray-300 text-sm">
-        <p>&copy; 2026 Olivia Smith. All rights reserved. | Designed & Developed with Vue.js + Laravel</p>
+        <p>&copy; 2026 Soeng Vicheka. All rights reserved. | Designed & Developed.</p>
       </div>
     </div>
   </footer>

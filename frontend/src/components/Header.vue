@@ -8,7 +8,6 @@
         <li><a href="#about" class="hover:text-gold transition">About</a></li>
         <li><a href="#skills" class="hover:text-gold transition">Skills</a></li>
         <li><a href="#projects" class="hover:text-gold transition">Projects</a></li>
-        <li><a href="#journey" class="hover:text-gold transition">Journey</a></li>
       </ul>
       <a href="#contact" class="btn-primary">Contact Me</a>
     </nav>

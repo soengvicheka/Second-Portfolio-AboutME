@@ -6,7 +6,6 @@
     <Projects />
     <About />
     <Contact />
-    <Journey />
     <Footer />
   </div>
 </template>
@@ -18,7 +17,6 @@ import Services from './components/Services.vue'
 import Projects from './components/Projects.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
-import Journey from './components/Journey.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -30,7 +28,6 @@ export default {
     Projects,
     About,
     Contact,
-    Journey,
     Footer
   }
 }

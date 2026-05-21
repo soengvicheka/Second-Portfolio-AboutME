@@ -60,24 +60,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Summary Stats -->
-      <div class="mt-16 pt-12 border-t-2 border-gold">
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div class="text-3xl font-bold text-gold mb-2">14+</div>
-            <p class="text-gray-600 font-medium">Technologies Mastered</p>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-gold mb-2">4</div>
-            <p class="text-gray-600 font-medium">Skill Categories</p>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-gold mb-2">∞</div>
-            <p class="text-gray-600 font-medium">Always Learning</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
