@@ -1,62 +1,83 @@
 <template>
-  <section id="skills" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="section-title mb-4">My <span class="text-gold">Skills</span></h2>
-      <p class="text-gray-600 mb-12 max-w-2xl">
-        A collection of technologies and tools I've mastered
-      </p>
+  <section id="skills" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="section-title mb-4">Skills I <span class="text-gold">Bring</span> to Every Project</h2>
+        <p class="mx-auto text-gray-600 max-w-2xl text-base sm:text-lg">
+          A polished skills showcase with category cards and modern accent styling to reflect expertise clearly.
+        </p>
+      </div>
 
-      <!-- Skills Categories -->
-      <div class="space-y-12">
-        <!-- Frontend -->
-        <div>
-          <h3 class="text-2xl font-bold text-dark-green mb-6 flex items-center">
-            <span class="w-12 h-12 bg-gold rounded-lg flex items-center justify-center mr-3 text-xl">🎨</span>
-            Frontend Development
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div v-for="skill in frontendSkills" :key="skill" class="bg-gradient-to-br from-gold to-light-gold p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all cursor-default">
-              <p class="font-semibold text-dark-green text-center">{{ skill }}</p>
+      <div class="grid gap-6 xl:grid-cols-4 lg:grid-cols-2">
+        <div class="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold text-2xl shadow-md">
+              🎨
             </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Frontend</p>
+              <h3 class="mt-2 text-xl font-semibold text-dark-green">Frontend Development</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mb-6">Clean interfaces, responsive builds and polished component work.</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <span v-for="skill in frontendSkills" :key="skill" class="badge bg-gradient-to-r from-gold to-light-gold text-dark-green shadow-sm">
+              {{ skill }}
+            </span>
           </div>
         </div>
 
-        <!-- Backend -->
-        <div>
-          <h3 class="text-2xl font-bold text-dark-green mb-6 flex items-center">
-            <span class="w-12 h-12 bg-dark-green rounded-lg flex items-center justify-center mr-3 text-xl text-white">⚙️</span>
-            Backend Development
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div v-for="skill in backendSkills" :key="skill" class="bg-gradient-to-br from-dark-green to-light-green p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all cursor-default">
-              <p class="font-semibold text-white text-center">{{ skill }}</p>
+        <div class="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-dark-green text-2xl text-white shadow-md">
+              ⚙️
             </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Backend</p>
+              <h3 class="mt-2 text-xl font-semibold text-dark-green">Backend Development</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mb-6">Solid server-side logic, frameworks and clean API flows.</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <span v-for="skill in backendSkills" :key="skill" class="badge bg-gradient-to-r from-dark-green to-light-green text-white shadow-sm">
+              {{ skill }}
+            </span>
           </div>
         </div>
 
-        <!-- Tools & Databases -->
-        <div>
-          <h3 class="text-2xl font-bold text-dark-green mb-6 flex items-center">
-            <span class="w-12 h-12 bg-light-green rounded-lg flex items-center justify-center mr-3 text-xl">🛠️</span>
-            Tools & Databases
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div v-for="skill in toolsSkills" :key="skill" class="bg-gradient-to-br from-light-green to-dark-green p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all cursor-default">
-              <p class="font-semibold text-white text-center">{{ skill }}</p>
+        <div class="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-light-green text-2xl text-white shadow-md">
+              🛠️
             </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Tools</p>
+              <h3 class="mt-2 text-xl font-semibold text-dark-green">Tools & Databases</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mb-6">Essential tooling and database systems for modern workflows.</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <span v-for="skill in toolsSkills" :key="skill" class="badge bg-gradient-to-r from-light-green to-dark-green text-white shadow-sm">
+              {{ skill }}
+            </span>
           </div>
         </div>
 
-        <!-- Other Skills -->
-        <div>
-          <h3 class="text-2xl font-bold text-dark-green mb-6 flex items-center">
-            <span class="w-12 h-12 bg-gray-400 rounded-lg flex items-center justify-center mr-3 text-xl">💡</span>
-            Other Concepts
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div v-for="skill in otherSkills" :key="skill" class="bg-gradient-to-br from-gray-400 to-gray-600 p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all cursor-default">
-              <p class="font-semibold text-white text-center">{{ skill }}</p>
+        <div class="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-400 text-2xl text-white shadow-md">
+              💡
             </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Other</p>
+              <h3 class="mt-2 text-xl font-semibold text-dark-green">Other Concepts</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mb-6">Design, process and collaboration tools that round out the experience.</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <span v-for="skill in otherSkills" :key="skill" class="badge bg-gradient-to-r from-slate-400 to-slate-600 text-white shadow-sm">
+              {{ skill }}
+            </span>
           </div>
         </div>
       </div>
@@ -71,7 +92,7 @@ export default {
     return {
       frontendSkills: ['HTML', 'CSS', 'JavaScript', 'Vue.js'],
       backendSkills: ['PHP', 'Laravel', 'OOP Basic'],
-      toolsSkills: ['MongoDB', 'Git & Github', 'Postman', 'Jupyter'],
+      toolsSkills: ['MongoDB', 'Git & Github', 'Postman', 'Jupyter', 'Testing'],
       otherSkills: ['Figma', 'Progress', 'Jira']
     }
   }

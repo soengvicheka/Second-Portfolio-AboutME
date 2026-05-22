@@ -9,9 +9,9 @@ class PortfolioController extends Controller
     public function getPortfolioData()
     {
         $data = [
-            'name' => 'Olivia Smith',
-            'title' => 'Product Designer',
-            'location' => 'USA',
+            'name' => 'Soeng Vicheka--IZHU',
+            'title' => 'Front-end developer, UX/UI designer and Testing',
+            'location' => 'Cambodia',
             'bio' => 'I\'m a passionate product designer with expertise in creating intuitive and beautiful user experiences.',
             'stats' => [
                 'projects' => 400,

@@ -5,14 +5,13 @@
       <div>
         <span class="badge mb-4">Hello There!</span>
         <h1 class="text-4xl md:text-5xl font-bold mb-4 text-dark-green">
-          I'm <span class="text-gold">Olivia Smith</span>,
+          I'm <span class="text-gold">SOENG Vicheka</span>,
           <br />
-          <span class="text-3xl md:text-4xl">Product Designer</span>
+          <span class="text-3xl md:text-4xl">Front-end Deveoper and UX/UI designer</span>
           <br />
-          <span class="text-2xl text-light-green">Based in USA.</span>
         </h1>
         <p class="text-gray-600 mb-8 text-lg">
-          I'm a passionate product designer with expertise in creating intuitive and beautiful user experiences. Let me help bring your vision to life.
+          I'm a passionate front-end developer and ux/ui designer with expertise in creating intuitive and beautiful user experiences. Let me help bring your vision to life.
         </p>
         <div class="flex gap-4">
           <button class="btn-primary">View Portfolio</button>

@@ -75,7 +75,7 @@
               <div>
                 <h3 class="text-lg font-bold text-dark-green mb-2">Email</h3>
                 <a href="mailto:olivia@example.com" class="text-gold hover:text-dark-green transition">
-                  olivia@example.com
+                  soengvicheka775@gamil.com
                 </a>
               </div>
             </div>
@@ -90,7 +90,7 @@
               <div>
                 <h3 class="text-lg font-bold text-dark-green mb-2">Phone</h3>
                 <a href="tel:+1234567890" class="text-gold hover:text-dark-green transition">
-                  +1 (234) 567-8900
+                  +855 67 407 884
                 </a>
               </div>
             </div>
@@ -105,7 +105,7 @@
               <div>
                 <h3 class="text-lg font-bold text-dark-green mb-2">Location</h3>
                 <p class="text-gray-600">
-                  San Francisco, USA
+                  BP 511 St. 371 Phum Tropeang Chhuk (Borey Sorla) Sangkat, Tek Thla Khan Sen Sok, Phnom Penh CAMBODIA
                 </p>
               </div>
             </div>

@@ -1,5 +1,5 @@
 {
-    "name": "olivia-smith-portfolio",
+    "name": "Soeng-Vicheka--IZHU-portfolio",
     "version": "1.0.0",
     "description": "Professional portfolio website - Vue.js + Laravel",
     "private": true,
@@ -20,7 +20,7 @@
         "designer",
         "professional"
     ],
-    "author": "Olivia Smith",
+    "author": "Soeng Vicheka",
     "license": "MIT",
     "devDependencies": {
         "concurrently": "^7.6.0"
