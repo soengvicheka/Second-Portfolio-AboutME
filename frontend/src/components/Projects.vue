@@ -7,10 +7,10 @@
       </p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="project in projects" :key="project.id" class="group cursor-pointer">
+        <div v-for="project in projects" :key="project.id" class="group">
           <div 
             class="bg-gray-300 h-64 rounded-lg overflow-hidden mb-4 flex items-center justify-center hover:shadow-lg transition cursor-pointer"
-            @click="triggerFileInput(project.id)"
+            @click="handleProjectClick(project)"
           >
             <img v-if="project.image" :src="project.image" :alt="project.title" class="w-full h-full object-cover hover:opacity-90 transition-opacity">
             <span v-else class="text-gray-500">Click to upload image</span>
@@ -27,8 +27,28 @@
           <div class="flex gap-2 mb-2">
             <span v-for="tag in project.tags" :key="tag" class="badge text-sm">{{ tag }}</span>
           </div>
-          <h3 class="text-lg font-bold text-dark-green group-hover:text-gold transition">{{ project.title }}</h3>
+          <a
+            v-if="project.link"
+            :href="project.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-lg font-bold text-dark-green group-hover:text-gold transition block"
+          >
+            {{ project.title }}
+          </a>
+          <h3 v-else class="text-lg font-bold text-dark-green group-hover:text-gold transition">
+            {{ project.title }}
+          </h3>
           <p class="text-gray-600 text-sm">{{ project.category }}</p>
+          <a
+            v-if="project.link"
+            :href="project.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block text-sm text-gold hover:underline mt-1"
+          >
+            Visit website
+          </a>
         </div>
       </div>
     </div>
@@ -46,6 +66,7 @@ export default {
           title: 'Alumni Media Platform',
           category: 'Vitual Company ( VC1 )',
           tags: ['DEVELOPER', 'DESIGN', 'TESTING'],
+          link: '',
           image: null
         },
         {
@@ -53,6 +74,7 @@ export default {
           title: 'Fruit Seller',
           category: 'Web Design Project',
           tags: ['DEVELOPER', 'TESTING', 'DESIGN'],
+          link: 'soeng-vicheka-project-webdesign.vercel.app',
           image: null
         },
         {
@@ -60,6 +82,7 @@ export default {
           title: 'Student News (Blog Website)',
           category: 'Web Design',
           tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+          link: 'students-news.vercel.app',
           image: null
         },
         {
@@ -67,6 +90,7 @@ export default {
           title: 'Weather App system',
           category: 'JavaScript',
           tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+          link: 'https://weather-system-group2.vercel.app/',
           image: null
         },
         {
@@ -74,12 +98,20 @@ export default {
           title: 'Task Management systen',
           category: 'Web Design',
           tags: ['Figma'],
+          link: '',
           image: null
         }
       ]
     }
   },
   methods: {
+    handleProjectClick(project) {
+      if (project?.link) {
+        window.open(project.link, '_blank', 'noopener,noreferrer')
+        return
+      }
+      this.triggerFileInput(project.id)
+    },
     triggerFileInput(projectId) {
       const inputRef = this.$refs[`fileInput-${projectId}`]
       if (inputRef && inputRef[0]) {
