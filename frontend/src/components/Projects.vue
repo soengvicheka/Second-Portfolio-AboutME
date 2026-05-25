@@ -57,23 +57,23 @@ export default {
         },
         {
           id: 3,
-          title: 'Ready Product Web Dashboard',
+          title: 'Student News (Blog Website)',
           category: 'Web Design',
-          tags: ['DASHBOARD', 'WEB', 'UI/UX'],
+          tags: ['HTML', 'CSS', 'JAVASCRIPT'],
           image: null
         },
         {
           id: 4,
-          title: 'Coffee Shop Mobile App',
-          category: 'Mobile App Design',
-          tags: ['MOBILE', 'COFFEE', 'APP'],
+          title: 'Weather App system',
+          category: 'JavaScript',
+          tags: ['HTML', 'CSS', 'JAVASCRIPT'],
           image: null
         },
         {
           id: 5,
-          title: 'Coffee Shop Website Design',
+          title: 'Task Management systen',
           category: 'Web Design',
-          tags: ['WEBSITE', 'COFFEE', 'DESIGN'],
+          tags: ['Figma'],
           image: null
         }
       ]
